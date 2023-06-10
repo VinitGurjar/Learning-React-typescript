@@ -10,4 +10,4 @@ function Message() {
     return <h1>Namaste {name}</h1>;
 }
 //Exporting this as a default object
-export default Message;  
+export default Message;
