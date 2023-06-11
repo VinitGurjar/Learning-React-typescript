@@ -7,7 +7,6 @@ function ListGroup() {
   //The event: MouseEvent below is a type annotation in typescript we can declare type of variable , parameter and so on.
   //Managing state
   //use state Hook  -A hook is function  Allows us to tab into buildin feature in react
-  useState;
 
   //using curly braces we can render data dynamically
   return (
