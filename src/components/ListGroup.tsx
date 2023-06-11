@@ -3,11 +3,11 @@ import { useState } from "react";
 function ListGroup() {
   let items = ["Naruto", "Sasuke", "Itachi", "Nagato", "Zoro"];
   //in jsx we don't have a for loop
-  let selectedIndex = 0;
+
   //The event: MouseEvent below is a type annotation in typescript we can declare type of variable , parameter and so on.
   //Managing state
   //use state Hook  -A hook is function  Allows us to tab into buildin feature in react
-
+  const [selectedIndex, setSelectedIndex] = useState(-1);
   //using curly braces we can render data dynamically
   return (
     <>
@@ -27,7 +27,8 @@ function ListGroup() {
             onClick={
               //a Function we set selected inedx to the current item
               () => {
-                selectedIndex = index;
+                // giving the function new index
+                setSelectedIndex(index);
               }
             }
           >
