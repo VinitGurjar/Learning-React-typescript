@@ -8,8 +8,13 @@ function ListGroup() {
       <h1>List</h1>
       {items.length === 0 && <p>No item found</p>}
       <ul className="list-group">
-        {items.map((item) => (
-          <li className="list-group-item" key={item}>
+        {items.map((item, index) => (
+          //Below Each Prop is on a single line after formating
+          <li
+            className="list-group-item"
+            key={item}
+            onClick={() => console.log(item, index)}
+          >
             {item}
           </li>
         ))}
