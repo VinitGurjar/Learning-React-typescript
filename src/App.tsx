@@ -1,16 +1,9 @@
-import ListGroup from "./components/ListGroup";
+import Alert from "./components/Alert";
+
 function App() {
-  let items = ["Naruto", "Sasuke", "Itachi", "Nagato", "Zoro"];
-  const handleSelectItem = (item: string) => {
-    console.log(item);
-  };
   return (
     <div>
-      <ListGroup
-        items={items}
-        heading="ninjas"
-        onSelectItem={handleSelectItem}
-      />
+      <Alert>yokoso</Alert>
     </div>
   );
 }
